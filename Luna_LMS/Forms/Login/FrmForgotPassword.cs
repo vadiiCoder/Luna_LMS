@@ -16,5 +16,20 @@ namespace Luna_LMS.Forms.Login
         {
             InitializeComponent();
         }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public static string GenerateOTP()
+        {
+            Random r = new Random();
+
+            return r.Next(
+                100000,
+                999999)
+                .ToString();
+        }
     }
 }

@@ -6,9 +6,6 @@ using System.Threading.Tasks;
 
 namespace Luna_LMS.Models
 {
-    internal class User
-    {
-    }
         public class Users
         {
             public int UserID { get; set; }

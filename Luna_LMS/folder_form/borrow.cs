@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Luna_LMS.folder_form
+{
+    public partial class borrow : Form
+    {
+        public borrow()
+        {
+            InitializeComponent();
+        }
+
+        private void close_pop_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button15_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

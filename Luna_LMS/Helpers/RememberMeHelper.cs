@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using System.IO;
 
-namespace Luna_LMS.Helpers
+namespace Luna_LMS.Helpers  
 {
     public static class RememberMeHelper
     {
@@ -23,6 +23,12 @@ namespace Luna_LMS.Helpers
 
             return JsonSerializer.Deserialize<string>(
                 File.ReadAllText(filePath));
+        }
+
+        public static void Clear()
+        {
+            if (File.Exists(filePath))
+                File.Delete(filePath);
         }
     }
 }

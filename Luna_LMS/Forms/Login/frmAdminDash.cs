@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Luna_LMS.Forms
+namespace Luna_LMS.Forms.Login
 {
-    public partial class FrmLogin : Form
+    public partial class frmAdminDash : Form
     {
-        public FrmLogin()
+        public frmAdminDash()
         {
             InitializeComponent();
         }

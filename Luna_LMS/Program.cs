@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Windows.Forms; // Keep this for Windows Forms
+using Luna_LMS.folder_form; // Points to your custom folder containing your forms
 
 namespace Luna_LMS
 {
@@ -14,9 +12,13 @@ namespace Luna_LMS
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            // We explicitly tell C# to use System.Windows.Forms.Application 
+            // to stop the conflict with WPF's System.Windows.Application
+            System.Windows.Forms.Application.EnableVisualStyles();
+            System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
+
+            // Explicitly call your specific SplashScreen form from folder_form
+            System.Windows.Forms.Application.Run(new Luna_LMS.folder_form.frmMember());
         }
     }
 }

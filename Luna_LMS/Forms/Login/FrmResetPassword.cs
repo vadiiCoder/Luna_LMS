@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Luna_LMS.Helpers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,24 @@ namespace Luna_LMS.Forms.Login
         public FrmResetPassword()
         {
             InitializeComponent();
+        }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            if (txtNewPassword.Text !=
+   txtConfirmPassword.Text)
+            {
+                MessageBox.Show(
+                    "Passwords do not match");
+
+                return;
+            }
+
+            string hash =
+                PasswordHelper.HashPassword(
+                    txtNewPassword.Text);
+
+            // Update DB
         }
     }
 }
