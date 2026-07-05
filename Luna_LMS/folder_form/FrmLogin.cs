@@ -84,7 +84,7 @@ namespace Luna_LMS.Forms
         {
             if (SessionManager.RoleID == 1)
             {
-                Admin_Dashboard frm = new Admin_Dashboard();
+                frmDashboard frm = new frmDashboard();
                 frm.Show();
                 this.Hide();
             }

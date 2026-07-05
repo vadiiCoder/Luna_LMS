@@ -55,9 +55,8 @@
             this.bg.Image = ((System.Drawing.Image)(resources.GetObject("bg.Image")));
             this.bg.ImageRotate = 0F;
             this.bg.Location = new System.Drawing.Point(0, 0);
-            this.bg.Margin = new System.Windows.Forms.Padding(4);
             this.bg.Name = "bg";
-            this.bg.Size = new System.Drawing.Size(1132, 629);
+            this.bg.Size = new System.Drawing.Size(849, 511);
             this.bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bg.TabIndex = 0;
             this.bg.TabStop = false;
@@ -72,9 +71,8 @@
             this.Splash_bg_img.Controls.Add(this.label1);
             this.Splash_bg_img.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Splash_bg_img.Location = new System.Drawing.Point(0, 0);
-            this.Splash_bg_img.Margin = new System.Windows.Forms.Padding(4);
             this.Splash_bg_img.Name = "Splash_bg_img";
-            this.Splash_bg_img.Size = new System.Drawing.Size(1132, 629);
+            this.Splash_bg_img.Size = new System.Drawing.Size(849, 511);
             this.Splash_bg_img.TabIndex = 2;
             this.Splash_bg_img.UseTransparentBackground = true;
             // 
@@ -82,11 +80,12 @@
             // 
             this.loadingProgressBar.BorderRadius = 4;
             this.loadingProgressBar.FillColor = System.Drawing.Color.White;
-            this.loadingProgressBar.Location = new System.Drawing.Point(359, 460);
+            this.loadingProgressBar.Location = new System.Drawing.Point(269, 374);
+            this.loadingProgressBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.loadingProgressBar.Name = "loadingProgressBar";
             this.loadingProgressBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(48)))), ((int)(((byte)(66)))));
             this.loadingProgressBar.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(127)))), ((int)(((byte)(143)))));
-            this.loadingProgressBar.Size = new System.Drawing.Size(447, 15);
+            this.loadingProgressBar.Size = new System.Drawing.Size(335, 12);
             this.loadingProgressBar.TabIndex = 6;
             this.loadingProgressBar.Text = "guna2ProgressBar1";
             this.loadingProgressBar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
@@ -98,9 +97,10 @@
             this.Exit_btn.BorderRadius = 10;
             this.Exit_btn.FillColor = System.Drawing.Color.Teal;
             this.Exit_btn.IconColor = System.Drawing.Color.White;
-            this.Exit_btn.Location = new System.Drawing.Point(1074, 0);
+            this.Exit_btn.Location = new System.Drawing.Point(806, 0);
+            this.Exit_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Exit_btn.Name = "Exit_btn";
-            this.Exit_btn.Size = new System.Drawing.Size(57, 52);
+            this.Exit_btn.Size = new System.Drawing.Size(43, 42);
             this.Exit_btn.TabIndex = 5;
             // 
             // lblPercentage
@@ -108,9 +108,10 @@
             this.lblPercentage.AutoSize = true;
             this.lblPercentage.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPercentage.ForeColor = System.Drawing.Color.White;
-            this.lblPercentage.Location = new System.Drawing.Point(506, 408);
+            this.lblPercentage.Location = new System.Drawing.Point(380, 332);
+            this.lblPercentage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPercentage.Name = "lblPercentage";
-            this.lblPercentage.Size = new System.Drawing.Size(120, 33);
+            this.lblPercentage.Size = new System.Drawing.Size(96, 26);
             this.lblPercentage.TabIndex = 4;
             this.lblPercentage.Text = "Loading";
             // 
@@ -120,10 +121,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(373, 357);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(280, 289);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(410, 41);
+            this.label2.Size = new System.Drawing.Size(327, 32);
             this.label2.TabIndex = 3;
             this.label2.Text = "Library Management System";
             // 
@@ -133,10 +133,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(471, 311);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(353, 253);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 46);
+            this.label1.Size = new System.Drawing.Size(166, 37);
             this.label1.TabIndex = 2;
             this.label1.Text = "\"Luna LMS\"";
             // 
@@ -154,14 +153,14 @@
             // 
             // SplashScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1132, 629);
+            this.ClientSize = new System.Drawing.Size(849, 511);
             this.Controls.Add(this.Splash_bg_img);
             this.Controls.Add(this.bg);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "SplashScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashScreen";

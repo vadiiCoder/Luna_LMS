@@ -13,15 +13,16 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using System.IO;
+using Luna_LMS.Forms;
 
 
 namespace Luna_LMS.folder_form
 {
-    public partial class Book_fomr : Form
+    public partial class frmBook : Form
     {
         private readonly string connectionString =
     "server=localhost;database=library_db;uid=root;pwd=;";
-        public Book_fomr()
+        public frmBook()
         {
             InitializeComponent();
 
@@ -243,7 +244,7 @@ AND
 
                 da.Fill(dt);
 
-                dvg_books.DataSource = dt;
+                dvg_book.DataSource = dt;
 
                 
             }
@@ -284,34 +285,34 @@ AND
         //the pop ups
         private void guna2Button15_Click(object sender, EventArgs e)
         {
-           Pop_up_pnl.Visible = !Pop_up_pnl.Visible;
+           //Pop_up_pnl.Visible = !Pop_up_pnl.Visible;
             
         }
 
         private void close_pop_Click(object sender, EventArgs e)
         {
-            Pop_up_pnl.Hide();
+            //Pop_up_pnl.Hide();
         }
 
     
         private void guna2Button17_Click(object sender, EventArgs e)
         {
-            popup_cat.Visible = !popup_cat.Visible;
+            //popup_cat.Visible = !popup_cat.Visible;
         }
 
         private void guna2Button20_Click(object sender, EventArgs e)
         {
-            popup_shelf.Visible = !popup_shelf.Visible;
+            //popup_shelf.Visible = !popup_shelf.Visible;
         }
 
         private void guna2CircleButton15_Click(object sender, EventArgs e)
         {
-            popup_shelf.Hide();
+            //popup_shelf.Hide();
         }
 
         private void guna2CircleButton2_Click(object sender, EventArgs e)
         {
-            popup_cat.Hide();
+            //popup_cat.Hide();
 
         }
 
@@ -319,6 +320,36 @@ AND
         {
 
         
+        }
+
+        private void btn_dash_Click(object sender, EventArgs e)
+        {
+            frmDashboard dashboard = new frmDashboard();
+            dashboard.Show();
+            this.Hide();
+        }
+
+        private void btn_borrow_Click(object sender, EventArgs e)
+        {
+            frmBorrow borrow = new frmBorrow();
+            borrow.Show();
+            this.Hide();
+        }
+
+        private void btn_mem_Click(object sender, EventArgs e)
+        {
+            frmMember mem = new frmMember();
+            mem.Show();
+            this.Hide();
+        }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You have been logged out.", "Logout", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            FrmLogin login = new FrmLogin();
+            login.Show();
+            this.Hide();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using LibraryManagementSystem.Utilities;
+using Luna_LMS.Forms;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -13,14 +14,14 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Luna_LMS.folder_form
 {
-    public partial class Admin_Dashboard : Form
+    public partial class frmDashboard : Form
     {
         string connectionString = "server=localhost;port=3307;database=library_db;uid=root;pwd=;";
 
         private Chart borrowingChart;
         private Chart membersChart;
 
-        public Admin_Dashboard()
+        public frmDashboard()
         {
             InitializeComponent();
 
@@ -287,7 +288,7 @@ namespace Luna_LMS.folder_form
         //book button
         private void book_btn_Click(object sender, EventArgs e)
         {
-            Book_fomr book = new Book_fomr();
+            frmBook book = new frmBook();
             book.Show();
             this.Hide();
         }
@@ -342,6 +343,32 @@ namespace Luna_LMS.folder_form
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        //log out btn action
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You have been logged out successfully.", "Logout", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
+            FrmLogin loginForm = new FrmLogin();
+            loginForm.ShowDialog();
+            this.Hide();
+        }
+
+        //member button action
+        private void btn_mem_Click(object sender, EventArgs e)
+        {
+            frmMember member = new frmMember();
+            member.Show();
+            this.Hide();
+        }
+
+        //borrow button action
+        private void btn_borrow_Click(object sender, EventArgs e)
+        {
+            frmBorrow borrow = new frmBorrow();
+            borrow.Show();
+            this.Hide();
         }
     }
 }

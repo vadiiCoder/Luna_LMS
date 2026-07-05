@@ -18,7 +18,7 @@ namespace Luna_LMS
             System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
 
             // Explicitly call your specific SplashScreen form from folder_form
-            System.Windows.Forms.Application.Run(new Luna_LMS.folder_form.frmMember());
+            System.Windows.Forms.Application.Run(new Luna_LMS.folder_form.frmDashboard());
         }
     }
 }

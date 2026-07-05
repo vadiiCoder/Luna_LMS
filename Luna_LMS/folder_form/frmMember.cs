@@ -16,5 +16,26 @@ namespace Luna_LMS.folder_form
         {
             InitializeComponent();
         }
+
+        private void btn_dash_Click(object sender, EventArgs e)
+        {
+            frmDashboard dashboard = new frmDashboard();
+            dashboard.Show();
+            this.Hide();
+        }
+
+        private void btn_borrow_Click(object sender, EventArgs e)
+        {
+            frmBorrow borrow = new frmBorrow();
+            borrow.Show();
+            this.Hide();
+        }
+
+        private void book_btn_Click(object sender, EventArgs e)
+        {
+            frmBook book = new frmBook();
+            book.Show();
+            this.Hide();
+        }
     }
 }
